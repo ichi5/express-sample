@@ -1,18 +1,13 @@
-import {
-    Table, Column, Model, DefaultScope, DataType, CreatedAt, UpdatedAt, DeletedAt,
-} from 'sequelize-typescript';
+import { Table, Column, Model, DefaultScope, DataType, CreatedAt, UpdatedAt, DeletedAt } from 'sequelize-typescript';
 
 @DefaultScope({
     order: [['id', 'ASC']],
 })
-
 @Table({
     tableName: 'users',
     timestamps: false,
 })
-
-export default class ManageUsers extends Model<ManageUsers> {
-
+export default class Users extends Model<Users> {
     @Column({
         field: 'id',
         type: DataType.NUMBER,
