@@ -1,12 +1,12 @@
 {
-  "env": "local",
+  "env": "test",
   "database": {
     "dialect": "mysql",
     "host": "127.0.0.1",
     "port": 13306,
-    "database": "express_db_local",
+    "database": "express_db_test",
     "username": "root",
     "password": "root",
-    "logging": true
+    "logging": false
   }
 }

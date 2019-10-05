@@ -22,7 +22,7 @@ export default class Users extends Model<Users> {
         type: DataType.STRING(100),
         allowNull: false,
     })
-    public userId!: string;
+    public email!: string;
 
     @Column({
         field: 'password',
@@ -36,6 +36,7 @@ export default class Users extends Model<Users> {
         field: 'created_at',
         type: DataType.DATE,
         allowNull: false,
+        defaultValue: DataType.NOW,
     })
     public createdAt!: Date;
 
@@ -44,6 +45,7 @@ export default class Users extends Model<Users> {
         field: 'updated_at',
         type: DataType.DATE,
         allowNull: false,
+        defaultValue: DataType.NOW,
     })
     public updatedAt!: Date;
 
