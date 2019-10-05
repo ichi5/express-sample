@@ -1,5 +1,5 @@
-CREATE DATABASE test_db;
-use test_db;
+CREATE DATABASE express_db_local;
+use express_db_local;
 
 CREATE TABLE users (
   id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,

@@ -9,9 +9,8 @@ $ npm install
 ```
 
 ```bash
-$ docker-compose build
-$ docker-compose up -d
-$ mysql -h 127.0.0.1 -P 13306 -u root -proot test_db
+$ make start
+$ make login
 mysql> select * from users;
 ```
 
@@ -26,13 +25,6 @@ Password: 1qazxsw2
 
 ```bash
 $ npm start
-```
-
-## Stop
-
-```bash
-$ docker-compose stop
-$ docker-compose down
 ```
 
 ## Test
