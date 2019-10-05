@@ -11,6 +11,7 @@
   "license": "MIT",
   "scripts": {
     "start": "ts-node src/index.ts",
+    "test": "NODE_ENV=test jest",
     "lint": "tslint 'src/**/*.ts'"
   },
   "keywords": [
@@ -42,10 +43,13 @@
     "@types/cookie-parser": "^1.4.2",
     "@types/express": "^4.17.1",
     "@types/express-session": "^1.15.14",
+    "@types/jest": "^24.0.18",
     "@types/node": "^12.7.5",
     "@types/passport": "^1.0.1",
     "@types/passport-local": "^1.0.33",
     "@types/sequelize": "^4.28.4",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
     "ts-node": "^8.4.1",
     "tslint": "^5.20.0",
     "typescript": "^3.6.3"
